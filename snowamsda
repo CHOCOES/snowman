@@ -1,0 +1,68 @@
+/**
+ * @(#)Snowman.java
+ *
+ * Snowman Applet application
+ *
+ * @author
+ * @version 1.00 2023/2/5
+ */
+
+import java.awt.*;
+import java.applet.*;
+
+public class Snowman extends Applet {
+
+	public void init() {
+	}
+
+	public void paint(Graphics g) {
+
+	//bottom
+	g.drawOval(120,440,180,180);
+	//body
+	g.drawOval(150,340,120,120);
+	//head
+	g.drawOval(170,260,80,80);
+	//hat
+	g.setColor(Color.black);
+	g.fillRect(150,260,120,20);
+	g.fillRect(190,220,40,20);
+	g.setColor(Color.red);
+	g.fillRect(190,240,40,20);
+	//eyes
+	g.setColor(Color.black);
+	g.fillOval(180,280,20,20);
+	g.fillOval(220,280,20,20);
+	//nose
+	g.setColor(Color.orange);
+	 // x coordinates of vertices
+        int x[] = { 210, 210, 240, };
+
+        // y coordinates of vertices
+        int y[] = { 300, 320, 310,  };
+
+        // number of vertices
+        int numberofpoints = 3;
+
+        // draw the polygon using drawPolygon function
+        g.fillPolygon(x, y, numberofpoints);
+        //mouth
+        g.drawArc(190,300,40,30,180,180);
+       //scarf
+       g.setColor(Color.red);
+	   g.fillRect(170,335,80,20);
+       g.fillRect(220,335,30,50);
+       //hands
+       g.setColor(Color.black);
+       g.drawLine(150,380,70,300);
+	   g.drawLine(90,320,60,320);
+	   g.drawLine(90,320,90,290);
+	   g.drawLine(270,380,350,300);
+	   g.drawLine(330,320,360,320);
+	   g.drawLine(330,320,330,290);
+	   //buttons
+	   g.fillOval(200,370,20,20);
+	   g.fillOval(200,400,20,20);
+	   g.fillOval(200,430,20,20);
+	}
+}
