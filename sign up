@@ -1,0 +1,81 @@
+/**
+ * @(#)sign_up.java
+ *
+ * JFC sign_up application
+ *
+ * @author 
+ * @version 1.00 2023/3/28
+ */
+import javax.swing.*;
+public class sign_up {
+    
+    public static void main(String[] args) {
+    	
+    	
+    
+     JFrame f= new JFrame("welcome");
+        JTextField t1,t2,t3,t4,t5;
+        
+        JLabel d= new JLabel("pisbook");
+        d.setBounds(115,10,400,30);
+        
+        JLabel w = new JLabel("first name:");
+        w.setBounds(50,50,200,30);
+        t1= new JTextField("");
+        t1.setBounds(115,50,140,30);
+        
+        JLabel e = new JLabel("last name:");
+        e.setBounds(50,100,200,30);
+        t2= new JTextField("");
+        t2.setBounds(115,100,140,30);
+           
+        JLabel a = new JLabel("email:");
+        a.setBounds(75,150,200,30);
+        t3= new JTextField("");
+        t3.setBounds(115,150,140,30);
+          
+            
+        JLabel q = new JLabel("password:");
+        q.setBounds(50,200,200,30);
+        t4= new JPasswordField("");
+        t4.setBounds(115,200,140,30);
+        
+        JLabel r = new JLabel("confirm password:");
+        r.setBounds(5,250,200,30);
+        t5= new JPasswordField("");
+        t5.setBounds(115,250,140,30);
+         
+        JLabel z = new JLabel("gender:");
+        z.setBounds(50,300,200,30);
+   		JRadioButton r1= new JRadioButton("male");
+   		r1.setBounds(100,300,60,30);
+   		JRadioButton r2= new JRadioButton("female");
+   		r2.setBounds(160,300,80,30);
+     	JRadioButton r3= new JRadioButton("others");
+     	r3.setBounds(240,300,100,30);
+     	ButtonGroup	bg= new ButtonGroup();
+      
+       JCheckBox checkBox= new JCheckBox ("i agree with the terms and conditions.",false);
+        checkBox.setBounds(50,350,300,30);
+        
+        JButton s= new JButton("Sign up");
+        s.setBounds(115,400,150,30);
+       	
+       	
+        
+        
+      	f.add(z);
+        f.add(t1); f.add(w);
+        f.add(t2); f.add(e);
+        f.add(t3); f.add(a);
+        f.add(t4); f.add(q);
+        f.add(t5); f.add(r);
+        f.add(checkBox);
+        f.add(s); f.add(d);
+        f.add(r1);f.add(r2);f.add(r3);   
+        bg.add(r1);bg.add(r2);bg.add(r3);	
+        f.setSize(350,500);
+        f.setLayout(null);
+        f.setVisible(true);
+    }
+}
