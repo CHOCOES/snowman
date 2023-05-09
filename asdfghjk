@@ -12,7 +12,7 @@ public class HandsonExam extends JFrame implements ActionListener{
 		
 	b1= new JTextField(10);
 	b2= new JTextField(10);
-	b2= new JTextField(10);
+	b3= new JTextField(10);
 	b1.setBounds(100,20,100,20);
 	b2.setBounds(100,45,100,20);
 	b3.setBounds(100,170,100,20);
